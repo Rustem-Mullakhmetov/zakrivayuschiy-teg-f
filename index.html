@@ -18,7 +18,7 @@
   </head>
   <body class="page body">
     <header class="header">
-      <a class="a">&lt;/HTML&gt;</a>
+      <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -57,12 +57,12 @@
               >&lt;/HTML&gt;</span
             >
             <img
-              class="card__item_image image_1"
+              class="card__item_image"
               src="./images/image.png"
               alt="Фургон на синем ночном фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               Это было самое начало пути. На этом этапе важно было проникнуться
               основами и настроиться на учёбу. И, возможно, подумать, как новые
@@ -71,8 +71,9 @@
             <p class="card__item-text">Было сложно и увлекательно.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -105,7 +106,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -118,12 +119,12 @@
               >&lt;/HTML&gt;</span
             >
             <img
-              class="card__item_image image_2"
+              class="card__item_image card__image-saturate"
               src="./images/image.png"
               alt="Фургон на сером ночном фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               На первых этапах мы работали со страхами и сомнениями, которые
               часто испытывают новички. Один из них — страх перед чистым листом.
@@ -134,7 +135,7 @@
             <p class="card__item-text">Такие мысли и сейчас есть.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -168,7 +169,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -179,12 +180,12 @@
           <div class="card__item_watermark-and-image">
             <span class="card__item_watermark">&lt;CSS&gt;</span>
             <img
-              class="card__item_image image_3"
+              class="card__item_image card__image-contrast"
               src="./images/image.png"
               alt="Фургон из цветов с высокой контрасностью"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
@@ -193,7 +194,7 @@
             <p class="card__item-text">Было такое.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -227,7 +228,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -240,12 +241,12 @@
               >&lt;desigions&gt;</span
             >
             <img
-              class="card__item_image image_4"
+              class="card__item_image card__image-grayscale"
               src="./images/image.png"
               alt="Фургон на фиолетовом ночном фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               На этом этапе вы уже достаточно разбирались в основах вёрстки,
               чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
@@ -256,7 +257,7 @@
             <p class="card__item-text">Ага.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -290,7 +291,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -299,14 +300,14 @@
         <li class="card__item">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="card__item_watermark-and-image">
-            <span class="card__item_watermark image5_watermark">care</span>
+            <span class="card__item_watermark">care</span>
             <img
-              class="card__item_image image_5"
+              class="card__item_image card__image-green"
               src="./images/image.png"
               alt="Фургон на зеленом фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               Всё это время вы были не одиноки (хотя, возможно, иногда и
               чувствовали, что одни против целого мира). Вас окружали
@@ -318,7 +319,7 @@
             <p class="card__item-text">Да.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -352,7 +353,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -365,12 +366,12 @@
               >&lt;support&gt;</span
             >
             <img
-              class="card__item_image image_6"
+              class="card__item_image card__image-black-white"
               src="./images/image.png"
               alt="Фургон на черном ночном фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
               вам могло показаться, что решения просто иссякли. Значит, пришло
@@ -379,7 +380,7 @@
             <p class="card__item-text">Такие мысли и сейчас есть.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -413,7 +414,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -426,12 +427,12 @@
               >&lt;lifes-style: none;&gt;</span
             >
             <img
-              class="card__item_image image_7"
+              class="card__item_image card__image-blur"
               src="./images/image.png"
               alt="Фургон на мутном ночном фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               Во время учёбы часто возникает чувство, когда не знаешь, за что
               хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -442,7 +443,7 @@
             <p class="card__item-text">Не знаю откуда.</p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -476,7 +477,7 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -487,12 +488,12 @@
           <div class="card__item_watermark-and-image">
             <span class="card__item_watermark">&lt;experience&gt;</span>
             <img
-              class="card__item_image image_8"
+              class="card__item_image card__image-dark-red"
               src="./images/image.png"
               alt="Фургон на красном ночном фоне"
             >
           </div>
-          <div class="border__img">
+          <div class="card__text">
             <p class="card__item-text">
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
               Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
@@ -507,7 +508,7 @@
             </p>
           </div>
           <div class="buttons_wrapper">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
@@ -541,25 +542,26 @@
               </svg>
             </button>
 
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
       </ul>
-    </main>
-    <footer>
+
       <button
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
-        class="save__button"
+        class="button save__button"
+        type="submit"
       >
         <svg class="floppy_image" viewBox="0 0 20 20">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-    </footer>
+
+    </main>
     <dialog id="dialog-id" class="modal-window">
       <div class="modal-window__inner">
         <div class="wrapper">
@@ -569,7 +571,7 @@
           <p class="modal-window__text">Вставьте дискету, чтобы продолжить</p>
         </div>
         <form method="dialog">
-          <button class="modal-window__button">
+          <button class="button modal-window__button" type="submit">
             <span class="button__text">ОК</span>
           </button>
         </form>
