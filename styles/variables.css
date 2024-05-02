@@ -24,4 +24,6 @@
       rgba(0, 0, 0, 0) 2px 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+    --filter: invert();
 }

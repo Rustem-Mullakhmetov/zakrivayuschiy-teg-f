@@ -24,6 +24,7 @@
   --header-font-weight: 700;
   --button-color: #fff;
   --color-button-text: #fff;
+  --filter: invert();
 }
 
 :root.theme-dark {
@@ -41,6 +42,7 @@
   --header-font-weight: 785;
   --button-color: #00cc14;
   --color-button-text: #00CC14;
+  --filter: unset;
 }
 
 @media (prefers-color-scheme: light) {
@@ -63,6 +65,7 @@
     --header-font-weight: 700;
     --button-color: #fff;
     --color-button-text: #fff;
+    --filter: invert();
   }
 }
 
@@ -82,5 +85,7 @@
     --header-font-weight: 785;
     --button-color: #00cc14;
     --color-button-text: #00CC14;
+    --filter: unset;
   }
+
 }

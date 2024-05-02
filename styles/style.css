@@ -67,6 +67,10 @@
   font-size: clamp(18px, 2.5vw, 23px);
 }
 
+.theme-menu__item {
+  cursor: pointer;
+}
+
 .theme-menu__button {
   border: none;
   outline: none;
@@ -75,9 +79,8 @@
   margin-inline-start: 15px;
   position: relative;
   font-size: 14px;
-
   transition: all 0.3s ease;
-  
+  cursor: pointer;
   opacity: 1;
   text-transform: uppercase;
   padding: 0;
@@ -89,7 +92,7 @@
   position: absolute;
   left: -18px;
   color: transparent;
-  animation: pulse 1s infinite alternate ease-in-out;
+  animation: pulse 0.5s infinite alternate ease-in-out;
 }
 
 .theme-menu__button:after {
@@ -175,7 +178,8 @@
 .card__text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  border-top: 2px solid var(--accent-color);
 }
 
 .card__title {
@@ -183,7 +187,7 @@
   font-size: var(--font-size);
   border-bottom: 2px solid var(--accent-color);
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' var(--accent-font-weight);
   
 }
 
@@ -213,7 +217,7 @@
   align-items: center;
   justify-content: center;
   transition: border 0.3s ease;
-  margin: 0 1px 0 0;
+  margin: 0 2px 0 0;
 }
 
 .card__icon-button:focus {
@@ -250,22 +254,7 @@
   z-index: 2;
 }
 
-
-
 /*   Save   */
-
-
-
-.floppy_image {
-  width: 21px;
-  height: 21px;
-  margin-inline-end: 8px;
-  stroke: var(--color-button-text);
-  mix-blend-mode: difference;
-  z-index: 2;
-}
-
-
 
 .modal-window {
   max-width: 353px;
@@ -300,12 +289,21 @@
 
 .modal-window__floppy_image {
   stroke: var(--accent-color);
+  fill: var(--accent-color);
   z-index: 2;
   width: 90px;
   height: 40px;
 }
 
-
+.floppy_image {
+  width: 21px;
+  height: 21px;
+  margin-inline-end: 8px;
+  stroke: var(--accent-color);
+  mix-blend-mode: difference;
+  filter: var(--filter);
+  z-index: 2;
+}
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
@@ -339,39 +337,6 @@ dialog::backdrop {
   filter: saturate(40%) invert(20%) contrast(200%) hue-rotate(100deg) brightness(70%);
 }
 
-@media (width <= 375px) {
-  body {
-    min-height: 100vh;
-  }  
-  
-  .header {
-    padding-top: 120px;
-  }
-
-  .a {
-    font-size: 49px;
-  }
-
-  .header__title {
-    font-size: 14px;
-  }
-
-  .card__title {
-    line-height: 1.2;
-  }
-
-  .modal-window {
-    max-width: 341px;
-    padding: 30px 40px;
-  }  
-
-  .floppy_image {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px;
-  }
-}
-
 .border_img{
   border-top: 2px solid var(--accent-color);
 }
@@ -385,7 +350,7 @@ dialog::backdrop {
   font-family: var(--accent-font), monospace;
   border: 2px solid var(--accent-color);
   line-height: 90%;
-  transition: all 0.5s;
+  transition: all 0.3s;
   font-size: 14px;
 }
 
@@ -409,4 +374,71 @@ dialog::backdrop {
   min-height: 38px;
   padding: 9px 17px;
   background-color: transparent;
+}
+
+@media (width < 376px) {
+  body {
+    min-height: 100vh;
+  }  
+}
+
+@media (width < 376px) {
+  .header {
+    padding-top: 120px;
+  }
+}
+
+@media (width < 376px) {
+  .header__logo {
+    font-size: 49px;
+  }
+}
+
+@media (width < 376px) {
+  .header__title {
+    font-size: 14px;
+  }
+}
+
+@media (width < 376px) {
+  .card__title {
+    line-height: 1.2;
+  }
+}
+
+@media (width < 376px) {
+  .modal-window {
+    max-width: 341px;
+    padding: 30px 40px;
+  }  
+}
+
+@media (width < 376px) {
+  .button {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (width < 376px) {
+  .save__button {
+    width: 309px;
+    height: 84px;
+    padding: 0;
+    margin: 50px 35px 102px 33px;
+  }
+}
+
+@media (width < 376px) {
+  .floppy_image {
+    width: 28px;
+    height: 28px;
+    margin-inline-start: 5px;
+  }
+}
+
+@media (width < 376px) {
+  .card__item_watermark {
+    right: 13px;
+  }
 }
