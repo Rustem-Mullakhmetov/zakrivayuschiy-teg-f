@@ -187,7 +187,7 @@
   font-size: var(--font-size);
   border-bottom: 2px solid var(--accent-color);
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--accent-font-weight);
+  font-variation-settings: 'wght' var(--header-font-weight);
   
 }
 
